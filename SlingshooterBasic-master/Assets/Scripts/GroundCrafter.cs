@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GroundCrafter : MonoBehaviour {
 
-	public int blockcount = 50;
+	public int blockcount = 200;
 
 	public GameObject groundPrefab;
 	
@@ -16,15 +16,15 @@ public class GroundCrafter : MonoBehaviour {
 		GameObject groundParent = GameObject.Find("GroundMaker");
 		
 		for(int i=0; i<blockcount; i++) {
-			
-			float divergence = Random.Range(9.73, 10.09);
-			
+
+			float number = (float)i;
+
 			GameObject ground = Instantiate(groundPrefab);
 
 			Vector3 cPos = Vector3.zero;
 
-			cPos.x = -100 + (i*2.344);
-			cPos.y = -1*divergence;
+			cPos.x = (float)(-100 + (number*2.344));
+			cPos.y = -1*(Random.Range(9.73f, 10.09f));
 			
 			ground.transform.position = cPos;
 			

@@ -87,6 +87,49 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &640264779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 640264781}
+  - 114: {fileID: 640264780}
+  m_Layer: 0
+  m_Name: PickupMaker2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &640264780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640264779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b43f8cab523ac498a55acdbb10749c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numPickups: 10
+  pickupPosMin: {x: 0, y: -5, z: 0}
+  pickupPosMax: {x: 400, y: 30, z: 0}
+  pickupPrefab: {fileID: 198832, guid: 4532f46c869f97f4bacc8f48836587db, type: 2}
+--- !u!4 &640264781
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640264779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.04303837, y: .679274082, z: 32.7102585}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &716087205
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,14 +231,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numClouds: 40
-  cloudPosMin: {x: -50, y: -15, z: 0}
-  cloudPosMax: {x: 150, y: 110, z: 0}
+  cloudPosMin: {x: -50, y: 15, z: 0}
+  cloudPosMax: {x: 400, y: 80, z: 0}
   cloudPrefabs:
-  - {fileID: 128238, guid: 9812f37996de043e9bcc713c10d57bce, type: 2}
-  - {fileID: 149086, guid: d164670d170d2495fac4b1e6e50267d2, type: 2}
-  - {fileID: 167532, guid: 80a5cd0f6dd9e46c6a2c617805a9f31f, type: 2}
-  - {fileID: 135014, guid: c926f04f66b294da7b03e89b807594d7, type: 2}
-  - {fileID: 169904, guid: 6dbf58d91a2554b4d961a9426afde207, type: 2}
+  - {fileID: 149116, guid: 9e50993ad3a681c4f96a43537196cf6b, type: 2}
+  - {fileID: 185108, guid: 36f914a00572107499f223b90da0cfc5, type: 2}
+  - {fileID: 162630, guid: 8f1b1aa4e2482af43a01738529331642, type: 2}
+  - {fileID: 168686, guid: 7ca5da6823bfd994caf5c1bc4cf4da52, type: 2}
+  - {fileID: 154096, guid: 8e82a4ce452a3874a86d05c65beb3327, type: 2}
 --- !u!4 &757322680
 Transform:
   m_ObjectHideFlags: 0
@@ -349,6 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5a192de7350634db83972cf66130cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockcount: 200
+  groundPrefab: {fileID: 199710, guid: 3586515cd910b164f90a0c0929ca1f01, type: 2}
 --- !u!1 &1090159514
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +551,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poi: {fileID: 0}
+--- !u!1 &1599027723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1599027725}
+  - 114: {fileID: 1599027724}
+  m_Layer: 0
+  m_Name: PickupMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1599027724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599027723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77125f8ae1ac69342bae9bd429752911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numPickups: 20
+  pickupPosMin: {x: 0, y: -5, z: 0}
+  pickupPosMax: {x: 400, y: 30, z: 0}
+  pickupPrefab: {fileID: 162164, guid: 7d86c6cc2b799ff41954d479d400677d, type: 2}
+--- !u!4 &1599027725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599027723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.13261652, y: -13.5955172, z: 14.5474529}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1938907865
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,7 +29,7 @@ public class Slingshot : MonoBehaviour {
 
 	void OnMouseExit() {
 		//print ("Oh no, the mouse has exited!");
-		launchPoint.SetActive(false);
+		if (!aimingMode)launchPoint.SetActive(false);
 	}
 
 	void OnMouseDown() {
@@ -79,7 +79,7 @@ public class Slingshot : MonoBehaviour {
 			projectile.GetComponent<Rigidbody>().velocity = -mouseDelta * shotMult;
 
 			FollowCam.S.poi = projectile;
-		
+			launchPoint.SetActive(false);
 		}
 
 	

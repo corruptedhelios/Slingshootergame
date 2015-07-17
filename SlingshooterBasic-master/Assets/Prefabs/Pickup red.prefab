@@ -44,6 +44,7 @@ GameObject:
   - 4: {fileID: 413518}
   - 95: {fileID: 9507010}
   - 135: {fileID: 13552312}
+  - 114: {fileID: 11473804}
   m_Layer: 0
   m_Name: Pickup red
   m_TagString: Untagged
@@ -168,6 +169,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11473804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457321fb27b730647bfd427136734944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13552312
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -175,7 +187,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198832}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.5

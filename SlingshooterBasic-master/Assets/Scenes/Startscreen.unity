@@ -143,6 +143,10 @@ Prefab:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11454122, guid: b9e951bbb0cabdb4f8da3ea0d3800f6b, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9e951bbb0cabdb4f8da3ea0d3800f6b, type: 2}
   m_IsPrefabParent: 0
@@ -177,7 +181,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 21, y: -42}
+  m_AnchoredPosition: {x: 10, y: -36.2999992}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &240499570
@@ -205,7 +209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Highscore:'
+  m_Text: 
 --- !u!222 &240499571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -740,6 +744,10 @@ Prefab:
     - target: {fileID: 413518, guid: 4532f46c869f97f4bacc8f48836587db, type: 2}
       propertyPath: m_LocalScale.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473804, guid: 4532f46c869f97f4bacc8f48836587db, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4532f46c869f97f4bacc8f48836587db, type: 2}

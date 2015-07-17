@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		particles = GameObject.Find("ParticleSystemProjectile").GetComponent<ParticleSystem>();
-		text1 = GameObject.Find ("Text").GetComponent<Text> ();
+		text1 = GameObject.Find ("Scorecounter").GetComponent<Text> ();
 	}
 
 	// Update is called once per frame
@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour {
 		text1.text = "Distance: " + score;
 		Vector3 Trans = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
 		particles.transform.position = Trans;
-		if (gameObject.transform.position.x > 2) {
+		if (score > 2) {
 			i++;
 		}
 		if (score != oldscore) {

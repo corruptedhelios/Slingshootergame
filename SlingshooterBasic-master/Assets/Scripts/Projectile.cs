@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour {
 
 	public bool done = false;
 	public int score;
+	public bool exploded;
 	public int i = 0;
 	public int e = 0;
 	int oldscore;
